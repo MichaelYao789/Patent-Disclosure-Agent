@@ -1,0 +1,25 @@
+# AI辅助发明专利交底书配置文件
+llm:
+  provider: deepseek                # 可选: openai / deepseek / anthropic / ollama / moonshot / qwen
+  model: deepseek-chat              # 模型名称
+  api_key_env: DEEPSEEK_API_KEY     # API Key 环境变量名
+  base_url: null                    # 自定义 API 地址（可选）
+  temperature: 0.2                  # 采样温度
+  max_tokens: 4096                  # 最大 token 数
+
+retrieval:
+  cn_patent_base: "http://epub.cnipa.gov.cn"  # 国知局专利公布公告
+  patentsview_base: "https://api.patentsview.org/patents/query"
+  crossref_base: "https://api.crossref.org/works"
+  serpapi_key_env: "SERPAPI_KEY"
+  google_cse_key_env: "GOOGLE_CSE_KEY"
+  google_cse_id_env: "GOOGLE_CSE_ID"
+  timeout: 20
+
+output:
+  dir: "output"
+  generate_markdown: true
+  generate_word: true
+  generate_excel: true
+  generate_images: true
+  template_path: "templates/disclosure_template.md"
