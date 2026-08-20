@@ -162,7 +162,6 @@ Q3: 如何切换大模型？
 A: 修改 config.yaml 中 llm.provider 和 llm.model，在 .env 设置对应 Key。
 
 
-
 ## 三、打包为 ZIP
 
 将以上所有文件保存到 `patent-agent` 文件夹后，在上级目录执行：
@@ -173,4 +172,4 @@ zip -r patent-agent.zip patent-agent/
 
 # Windows PowerShell
 Compress-Archive -Path patent-agent -DestinationPath patent-agent.zip
-
+```

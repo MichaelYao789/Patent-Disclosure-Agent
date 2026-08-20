@@ -23,3 +23,4 @@ cp .env.example .env
 
 # 运行
 python -m patent_agent.main --input examples/input_brief.json
+```

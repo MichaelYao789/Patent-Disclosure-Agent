@@ -1,0 +1,24 @@
+# 密钥与本地环境（切勿提交真实 Key）
+.env
+.venv/
+venv/
+env/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 运行输出（生成产物）
+output/
+
+# 编辑器 / 系统文件
+.idea/
+.vscode/
+.DS_Store
+
+# 沙箱内部目录
+.codebuddy/
+.genie/
+.templates/
